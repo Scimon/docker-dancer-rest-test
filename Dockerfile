@@ -5,7 +5,7 @@ MAINTAINER  Simon Proctor simon.proctor@gmail.com
 RUN curl -L http://cpanmin.us | perl - App::cpanminus
 RUN cpanm Carton Starman
 
-RUN cachebuster=af45500 git clone https://github.com/Scimon/docker-dancer-rest-test.git
+RUN cachebuster=5d92692 git clone https://github.com/Scimon/docker-dancer-rest-test.git
 RUN cd docker-dancer-rest-test && carton install --deployment
 
 #EXPOSE 8080
